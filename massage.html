@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8" > 
+	<title>发送短信</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/message.css">
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" />
+
+</head>
+<body>
+
+<div id="contain">
+	<h2 class="top_h2">发送家长</h2>
+	
+	<div class="content">
+		<div class="content_prompt">提示：您给家长的留言要通过教师秘书审核后，才能发给家长</div>
+		
+		<div class="pl10 borderb">
+			<form action="" method="post" id="form_post" enctype="multipart/form-data">
+				导入Excel：
+		        <input type="file" name="fileUpload" class="form_post_file" />
+		        <input type="submit" value="发送文件短信" class="form_post_up border form_post_submit" disabled="disabled" />
+		        <input type="button" value="查看文件格式" class="form_post_up border form_post_button" />
+		    </form>
+		    <p class="exceltip">注：请点击“查看文件格式”，根据格式做好导入的Excel文件，再按“选择文件”，之后按“发送文件短信”，即完成了导入短信的发送。</p>
+		</div>
+		<!-- 选择人员 -->
+		<div class="content_choose pl10 borderb">
+			发送对象：<input type="button" style="margin-right:25px;" class="ml10" value="选择发送对象" />已选择<span id="hadSelect">0</span>个对象
+		</div>
+
+		<!-- 留言板 -->
+		<div class="content_msg pl10">
+			<p>短信内容：<span>已输入[<i></i>]个字 (请介于10~500字之间)</span></p>
+			<textarea name="textarea_msg" class="textarea_msg mt10" cols="30" rows="10"></textarea>
+		</div>
+		<div class="content_time bordert">
+			<p class="mt10"> 
+			<input type="checkbox" id="choose_time" class="choose_time" />&nbsp;设定留言发送时间为
+				<input type="text" id="datepicker" class="ml10 mr10" />
+				<input type="text" class="choose_time_hour" />&nbsp;：&nbsp;<input type="text" class="choose_time_minute" />
+			</p>
+			<input type="checkbox" style="visibility:hidden" />
+			<span class="content_note">( 注：打勾选中复选框后，才能按照您设定的时间发送留言 )</span>
+		</div>
+
+		<div class="content_send bordert">
+			<input type="button" class="border" id="content_send" value="发送留言" disabled="disabled" />
+		</div>
+	</div>
+</div>
+
+<!-- 查看Excel格式 -->
+<div class="seeExcel">
+	<div class="seeExcel_bg"></div>
+	<div class="seeExcel_div">
+		<p class="seeExcel_div_p1">请严格按照如下Excel格式：</p>
+		<img src="images/excel.png" alt="">
+		<p class="seeExcel_div_p2">
+			<input type="button" value="确认">
+		</p>
+	</div>
+</div>
+
+<!-- 选择发送对象 -->
+<div id="select">
+	<h2>选择发送对象</h2>
+	<!-- 搜索框 -->
+	<div class="select_search">
+		<p><input type="text" placeholder="搜索姓名/电话号码" id="inputSearch" /><img src="images/actsearch.jpg" id="imgSearch" alt="搜索" /></p>
+		<p>( <span>正常号码</span>、<span style="color:blue;">无号码/停用</span>、<span style="color:#daa520;">关闭外拨</span>、<span style="color:red;">欠费号码</span> )</p>
+	</div>
+	
+	<!-- 全部班级 -->
+	<div class="select_class">
+		<div id="allClass">
+			<p class="select_class_p_head">全部班级</p>
+			<div class="select_class_div select_class_div0">
+				<ul id="fourtemple">
+					<!-- <li class="fourtemple_li"><span venue="本宫"></span>本宫<input type="checkbox" /></li>
+
+					<li class="fourtemple_li"><span venue="大石"></span>大石<input type="checkbox" /></li>
+
+					<li class="fourtemple_li"><span venue="桥南"></span>桥南<input type="checkbox" /></li>
+
+					<li class="fourtemple_li"><span venue="云艺"></span>云艺<input type="checkbox" /></li> -->
+				</ul>
+			</div>
+		</div>
+		<div id="waitClass">
+			<p class="select_class_p_head">待选择<span>0</span></p>
+			<div class="select_class_div select_class_div1">
+				<ul id="checkUl">
+					<li class="checkLiLength"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="clickClass">
+			<p id="clickClass_p1">>></p>
+			<p id="clickClass_p2">></p>
+			<p id="clickClass_p3"><</p>
+			<p id="clickClass_p4"><<</p>
+			<p id="clickClass_p5">清除全部</p>
+		</div>
+		<div id="selectClass">
+			<p class="select_class_p_head">已选择<span>0</span></p>
+			<div class="select_class_div select_class_div2">
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- 确认/取消按钮 -->
+	<div class="select_sure_close">
+		<input type="button" id="select_sure" value="确定" /><input type="button" id="select_close" value="取消" />
+	</div>
+</div>
+
+<!-- 加载图 -->
+<div id="loading">
+	<img src="images/loading.gif" alt="加载中...">
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+</html>

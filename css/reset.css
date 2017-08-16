@@ -1,0 +1,34 @@
+/*CSS reset*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6, pre,form,fieldset,input,textarea,p,th,td{margin: 0;padding: 0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style: none;}
+th{text-align: center;}
+a{text-decoration: none; cursor: pointer; color:#333; }
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+address,caption,cite,code,dfn,em,strong,th,var,i {font-weight: normal;font-style: normal;}
+q:before,q:after {content:'';}
+input { font-family: "微软雅黑";outline: none; }
+input[type=button] { cursor: pointer; }
+body {
+	position: relative;
+	background: #fff;
+	color: black;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: "微软雅黑","Segoe UI","Lucida Grande","Microsoft YaHei",FreeSans,Arimo,"Droid Sans","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+.border { border:1px solid #c9c9c9; }
+.borderb { border-bottom:1px solid #c9c9c9; }
+.bordert { border-top:1px solid #c9c9c9; }
+
+.pl10 { padding-left:10px; }
+
+.ml10 { margin-left:10px; }
+.mr10 { margin-right:10px; }
+.mt10 { margin-bottom:10px; }
+
+.bgc { background-color: #e6e6e6; }
+.color_red { color: red; }
+.color_blue { color: blue; }
+.color_yellow { color: #daa520; }

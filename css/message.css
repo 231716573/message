@@ -1,0 +1,128 @@
+#contain { width:870px; margin:0px auto; }
+
+.top_h2 { font-size: 16px; height:50px; line-height: 50px; border-bottom: 1px solid black; }
+
+/*短信内容*/
+.content { width:580px; border:1px solid #d7d7d7; margin:15px auto;  }
+.content .content_prompt { margin:15px 0px 0px; padding:3px 0px; border-top:1px solid #c9c9c9; border-bottom:1px solid #c9c9c9; text-align: center; font-size: 12px;font-weight: bold; }
+.content .content_choose { height:48px; line-height: 48px; }
+.content .content_choose input { font-size: 12px; padding:3px 5px; background:#fff;border-width:0px 2px 2px 0px;border-color: #7b7c7b;border-style:solid; }
+.content .content_choose span { color:red; }
+
+.content .content_msg { margin-right: 32px; }
+.content .content_msg p { margin:10px 0px; }
+.content .content_msg p span { color:red; }
+.content .content_msg textarea { font-size: 14px; border:1px solid #c9c9c9; padding:10px; resize:none; width:100%; height:150px; }
+.content .content_time { padding:10px; }
+.content .content_time .choose_time { vertical-align:text-bottom; margin-bottom:2px;}
+.content .content_time input[type=text] { height:22px; line-height: 22px; }
+.content .content_time #datepicker { width:110px;}
+.content .content_time .choose_time_hour,.content .content_time .choose_time_minute { width:28px;  }
+.content .content_note { color:red; }
+
+
+.content .content_send { text-align: center; width:100%; height:44px; line-height: 46px; }
+.content .content_send input{ 	font-size: 13px; background-color: #fff; width:138px; height:24px; line-height: 22px;
+								background: -moz-linear-gradient(top, #ffffff 0%, #d7d7d7  100%); 
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d7d7d7));
+								background: -webkit-linear-gradient(top, #ffffff 0%,#d7d7d7 100%); 
+								background: -o-linear-gradient(top, #ffffff 0%,#d7d7d7 100%); 
+								background: -ms-linear-gradient(top, #ffffff 0%,#d7d7d7 100%); 
+								background: linear-gradient(to bottom, #ffffff 0%,#d7d7d7 100%); 
+							} 
+
+/*弹出框*/
+#select{position: fixed; 
+		left: 50%; top: 5%; 
+		border-radius:20px ;
+		-moz-border-radius:20px ;
+		-webkit-border-radius:20px ;
+		background-color: #fff; 
+		margin-left:-420px; 
+		border:1px solid #b2b2b2; 
+		width:840px; height:601px; 
+		overflow: hidden;
+		display: none; }
+#select h2 { height:49px; line-height: 50px; font-size: 18px; padding-left: 15px; border-bottom: 1px solid #dedede;
+			background: -moz-linear-gradient(top, #ffffff 0%, #dedede  100%); 
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedede));
+			background: -webkit-linear-gradient(top, #ffffff 0%,#dedede 100%); 
+			background: -o-linear-gradient(top, #ffffff 0%,#dedede 100%); 
+			background: -ms-linear-gradient(top, #ffffff 0%,#dedede 100%); 
+			background: linear-gradient(to bottom, #ffffff 0%,#dedede 100%); }
+/*确定/取消按钮*/
+#select .select_sure_close { width:100%; height:46px; line-height: 46px; text-align: center; }
+#select .select_sure_close input { width: 115px; height: 30px; line-height: 27px;
+									border:1px solid #c6c6c6;
+									margin:0px 8px;
+									font-size: 16px;
+									color:#4d4d4d;
+									border-radius:5px ;
+									-moz-border-radius:5px ;
+									-webkit-border-radius:5px ;
+									background: -moz-linear-gradient(top, #ffffff 0%, #dedede  100%); 
+									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedede));
+									background: -webkit-linear-gradient(top, #ffffff 0%,#dedede 100%); 
+									background: -o-linear-gradient(top, #ffffff 0%,#dedede 100%); 
+									background: -ms-linear-gradient(top, #ffffff 0%,#dedede 100%); 
+									background: linear-gradient(to bottom, #ffffff 0%,#dedede 100%); }
+/*搜索框*/
+.select_search { color:#4d4d4d;padding: 15px; }
+.select_search p { position: relative; display: inline-block; margin-right:25px; }
+.select_search p input { font-size: 12px; width:240px; padding:5px 10px; border:1px solid #ccc;border-radius:20px ;-moz-border-radius:20px ;-webkit-border-radius:20px; }
+.select_search p img { cursor: pointer; position: absolute; top: 4px; left: 230px; }
+
+/*班级*/
+.select_class { margin:0px 15px 15px; color: #4d4d4d; }
+.select_class #allClass,.select_class #waitClass,.select_class #selectClass,.select_class #clickClass { float: left; height:445px; }
+.select_class .select_class_p_head { font-size: 15px; margin-bottom: 5px; }
+.select_class .select_class_p_head span { margin-left: 15px; }
+.select_class .select_class_div { border:1px solid #d9d9d9; width:100%;height:414px; }
+.select_class .select_class_div0 { overflow-x: hidden; overflow-y: scroll; width: 300px; margin-right: 25px; }
+.select_class .select_class_div1,.select_class .select_class_div2 { width: 200px; }
+.select_class #clickClass { font-size: 12px; margin:40px 10px 0px; height:300px; }
+.select_class #clickClass p { cursor: pointer; margin-top: 10px; text-align: center; color:#4d4d4d; width: 55px; height: 28px; line-height: 28px; border:1px solid #d9d9d9; }
+
+#waitClass .select_class_div1,#selectClass .select_class_div2 { overflow:scroll; }
+#waitClass .select_class_div1 ul,#selectClass .select_class_div2 ul { width:180px; }
+#waitClass .select_class_div1 li,#selectClass .select_class_div2 li { padding:5px; }
+
+#fourtemple li input { vertical-align: bottom;margin-left: 5px; margin-bottom: 1px; }
+#fourtemple li span { margin-right:5px; vertical-align: bottom; display: inline-block; width: 15px; height: 15px; background: url(../images/open.jpg) 0px 0px  no-repeat; } 
+#fourtemple li span.fourtemple_li_bgp { background: url(../images/close.jpg) 0px 0px  no-repeat; }
+#fourtemple li{padding:3px 5px 3px 5px;width:100%;}
+
+#fourtemple .templeClass { margin-left: 2em; }
+#fourtemple .templeClass li:first-child { background: transparent; }
+#fourtemple .templeClass1 { margin-left: 2em; }
+#fourtemple .templeClass2 { margin-left: 2em; }
+#fourtemple .templeClass2 span{ background: #fff; }
+#fourtemple .templeClass div { text-indent: 2em; }
+
+#loading { display: none; position:fixed;z-index:9999; top:50%; left:50%; margin-left:-16px;margin-top:-32px; }
+
+#form_post { padding-top:10px; padding-bottom: 10px; }
+#form_post input { border:none; }
+#form_post .form_post_up { padding:3px 10px;margin-right:10px;border: 1px solid #c9c9c9;
+	background: -moz-linear-gradient(top, #ffffff 0%, #d7d7d7 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d7d7d7));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#d7d7d7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#d7d7d7 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#d7d7d7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#d7d7d7 100%); }
+
+
+.exceltip { margin-bottom:10px; line-height: 19px; color:red; }
+.seeExcel { position: fixed; top:0px; left:0px; z-index: 9999;width:100%; height:100%; display: none; }
+.seeExcel .seeExcel_bg { position: fixed; top:0px; left:0px; z-index: 9999; width:100%; height:100%; background: #000; filter:alpha(opacity=50);  -moz-opacity:0.5;  -khtml-opacity: 0.5;  opacity: 0.5;   }
+.seeExcel .seeExcel_div{ border-radius:10px ;-moz-border-radius:10px ;-webkit-border-radius:10px; position: fixed; top:50%; left:50%; margin-left: -260px; margin-top: -150px; z-index: 9999; padding-left: 10px; width: 510px; height: 235px; background: #fff;}
+.seeExcel .seeExcel_div .seeExcel_div_p1 { margin:10px 0px; font-size: 15px; }
+.seeExcel .seeExcel_div_p2 { text-align: center; margin:20px 0px; }
+.seeExcel .seeExcel_div_p2 input { padding:5px 40px;margin-right:10px;border: 1px solid #c9c9c9;
+	background: -moz-linear-gradient(top, #ffffff 0%, #d7d7d7 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d7d7d7));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#d7d7d7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#d7d7d7 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#d7d7d7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#d7d7d7 100%); }
+
